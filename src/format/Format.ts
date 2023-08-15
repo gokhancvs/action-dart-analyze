@@ -32,7 +32,7 @@ export async function format(params: { modifiedFiles: ModifiedFiles, ignoredFile
   args.push('.');
 
   try {
-    await exec.exec('dart format', args, options);
+    await exec.exec('fvm dart format', args, options);
   } catch (_) {
     // Do nothing.
   }

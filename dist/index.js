@@ -16543,7 +16543,7 @@ function format(params) {
         }
         args.push('.');
         try {
-            yield exec.exec('dart format', args, options);
+            yield exec.exec('fvm dart format', args, options);
         }
         catch (_) {
             // Do nothing.
