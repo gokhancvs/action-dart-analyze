@@ -32,7 +32,7 @@ export async function analyze(params: { modifiedFiles: ModifiedFiles }): Promise
   const args = [actionOptions.workingDirectory];
 
   try {
-    await exec.exec('dart analyze --format machine', args, options);
+    await exec.exec('fvm dart analyze --format machine', args, options);
   } catch (_) {
     // dart analyze sometimes fails
   }

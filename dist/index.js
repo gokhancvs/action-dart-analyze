@@ -16407,7 +16407,7 @@ function analyze(params) {
         };
         const args = [ActionOptions_1.actionOptions.workingDirectory];
         try {
-            yield exec.exec('dart analyze --format machine', args, options);
+            yield exec.exec('fvm dart analyze --format machine', args, options);
         }
         catch (_) {
             // dart analyze sometimes fails
